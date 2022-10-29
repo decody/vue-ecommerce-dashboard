@@ -10,6 +10,7 @@
 
 ## 구현 기능
 > 상세한 구현 플로우나 사항은 업데이트될 Figma 문서에 업데이트 예정
+> 대시보드용 mock data는 js 형태로 제공 예정
 - 데이터 테이블, 차트, 셀렉트박스, 모달 등 UI kits는 Vuetify 프레임워크 활용
 - Vuetify 차트에서 지원하지 않는 차트는 Echarts 개발
 - 동적 Search Filtering 기능
