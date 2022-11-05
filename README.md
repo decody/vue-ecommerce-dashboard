@@ -4,26 +4,36 @@
 ## 구현 메뉴
 > 총 개발기간은 6 weeks 를 목표로 함
 > decody, jinavely: 각자 전체 개발을 목표로 함
-1. Dashboard (대시보드)
-2. Order (주문)
-3. Statistics (통계)
+1. Sign-up (로그인)
+2. Dashboard (대시보드)
+3. Order (주문), Order Detail (주문 상세 모달)
+4. Statistics (통계)
 
 ## 구현 기능
-> 상세한 구현 플로우나 사항은 업데이트될 Figma 문서에 업데이트 예정
->> 대시보드용 mock data는 js 형태로 제공 예정
+> 대시보드용 mock data는 js로 최초 제공 -> 차후 백엔드 Node.js + Sqlite3로 구현 
 - 데이터 테이블, 차트, 셀렉트박스, 모달 등 UI kits는 Vuetify 프레임워크 활용
 - Vuetify 차트에서 지원하지 않는 차트는 Echarts 개발
-- 동적 Search Filtering 기능
-- 특정 페이지 레이아웃 위치값 로컬 저장 기능 (Vuex)
-- 레이아웃 drag & drop 기능
-- 특정 차트 이미지파일 (PNG) Export
-- 특정 페이지 Refresh 기능
+- --동적 Search Filtering 기능--
+- Statistics 카테고리
+    - 레이아웃 위치값 로컬 저장 기능 (Vuex)
+    - 컴포넌트 drag & drop 기능
+    - 일부 차트 및 컴포넌트 PNG/PDF Export
+- Order 페이지 
+    - 검색 기능
+    - Refresh 기능
+    - Excel 다운
+    - 기간 검색 : `https://livelybone.github.io/vue/vue-datepicker/`
 - 다국어: 국/영문
+- Sign-up 페이지
+    - admin / shopmaster 2단계 회원 레벨링
+    - 권한별로 접근 페이지 관리 : admin - 전 페이지 접근, shopmaster - Dashboard, Orders만 접근
 
 ## Figma 기반 UI & 레이아웃 구성
 - Figma 기반 레이아웃 구성. why? css로 컴포넌트 구성하기 빠르며 원격 협업이 쉬움.
 - 추후 차기 사이드 프로젝트인 백엔드 Node.js와 프론트엔드 React에도 Figma로 활용 예정
-- 레이아웃 외부 링크 `https://www.figma.com/file/4DELY9OqkS2UFpqqP1ouvY/e-commerce-dashboard-(share)?node-id=0%3A1`
+- Figma 레이아웃 (Sign-up, Dashboard, Orders, Stats, Order Detail modal)
+    - `https://www.figma.com/file/4DELY9OqkS2UFpqqP1ouvY/e-commerce-dashboard-(share)?node-id=0%3A1`
+    - 상세한 구현 설명은 figma의 Guide 레이아웃 참고
 
 ## 기술 스택
 - json-server
@@ -39,6 +49,7 @@
 - moment
 - vue-i18n
 - file-saver
+- vue-datepicker
 - Material Design
 
 ## 프로젝트 폴더 (src 하위 폴더)
