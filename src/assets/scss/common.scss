@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -21,4 +24,20 @@ ul, ol, li {
 .content-box {
     width: 1216px;
     margin: 0 auto;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.noto-sans {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-400 {
+    font-weight: 400;
 }

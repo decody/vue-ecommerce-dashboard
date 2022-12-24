@@ -1,16 +1,17 @@
 <template>
 	<div>
-		<div>대시보드 (메인)</div>
-		<h3>Vuetify 테이블 예제</h3>
-		<div class="vuetify-table-wrap">
-			<v-data-table
-				:headers="headers"
-				:items="desserts"
-				:items-per-page="5"
-				class="elevation-1"
-			></v-data-table>
+		<div>
+			<div>대시보드 (메인)</div>
+			<h3>Vuetify 테이블 예제</h3>
+			<div class="vuetify-table-wrap">
+				<v-data-table
+					:headers="headers"
+					:items="desserts"
+					:items-per-page="5"
+					class="elevation-1"
+				></v-data-table>
+			</div>
 		</div>
-		
 	</div>
 </template>
 
@@ -18,7 +19,7 @@
 
 export default {
 	components: {
-		
+
 	},
 	data() {
 		return {

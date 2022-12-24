@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Login from "../pages/Login.vue";
 import Dashboard from "../pages/Dashboard.vue";
 import Order from "../pages/Order.vue";
 import Stats from "../pages/Stats.vue";
@@ -12,6 +13,10 @@ export default new VueRouter({
     routes: [
         {
             path: '/',
+            component: Login
+        },
+        {
+            path: '/dashboard',
             component: Dashboard
         },
         {

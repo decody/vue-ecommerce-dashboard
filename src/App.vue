@@ -3,21 +3,18 @@
 		<Sidebar />
 		<Header />
 		<router-view></router-view>
-		<Footer />
 	</div>
 </template>
 
 <script>
 import Sidebar from './components/common/Sidebar.vue'
 import Header from './components/common/Header.vue'
-import Footer from './components/common/Footer.vue'
 import '@/assets/scss/_index.scss';
 
 export default {
 	components: {
 		Sidebar,
 		Header,
-		Footer,
 	}
 }
 </script>
